@@ -1,0 +1,31 @@
+form {
+    border: 2px solid black;
+    padding: 20px;
+    width: 35vw;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.secondCol {
+    grid-column-start: 2;
+}
+
+#count {
+    grid-row-start: 1;
+}
+
+#lesson {
+    grid-row-start: 2;
+}
+
+.lesson {
+    grid-column-start: 1;
+}
+
+input[name="create"] {
+    width: 35%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    place-self: center;
+}

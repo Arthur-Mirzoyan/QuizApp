@@ -1,0 +1,57 @@
+body {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid chartreuse;
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgba(127, 255, 0, 0.2);
+    color: white;
+}
+
+textarea {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    resize: none;
+}
+
+#addBtn {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    place-self: center;
+    width: 50%;
+    border: none;
+    background-color: chartreuse;
+    color: #191919;
+    font-weight: 600;
+}
+
+#addBtn:hover {
+    background-color: yellowgreen;
+    transition: all ease-in-out .5s;
+    animation: beat .5s infinite alternate;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: rgba(25, 25, 25, 0.8);
+    border: 1px solid rgb(96, 96, 96);
+}
+
+@keyframes beat {
+    to {
+        transform: scale(1.2);
+    }
+}

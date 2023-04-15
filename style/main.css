@@ -1,0 +1,76 @@
+.container table {
+    width: 80vw;
+}
+
+.container table tr:first-child {
+    background-color: rgb(54, 54, 54);
+    position: sticky;
+    color: white;
+}
+
+#tableHeader th {
+    font-size: 20px;
+}
+
+.container table th {
+    padding: 15px;
+    border: 2px solid rgb(91, 91, 91);
+    font-size: 18px;
+}
+
+form {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#explanation {
+    width: 50%;
+}
+
+#changeBtn, #deleteBtn {
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    border: none;
+    border-radius: 50%;
+    transition: all ease-in-out .2s;
+}
+
+#changeBtn {
+    background-color: rgb(4, 168, 4);
+}
+
+#deleteBtn {
+    background-color: orangered;
+}
+
+#deleteAllBtn {
+    padding: 5px 10px;
+    background-color: orangered;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all ease-in-out .5s;
+}
+
+#deleteAllBtn:hover {
+    box-shadow: 0 0 0 10px red;
+    animation: beat .5s infinite alternate;
+}
+
+#changeBtn:hover {
+    background-color: #24db24;
+    box-shadow: 0 0 0 5px #88e688;
+}
+
+#deleteBtn:hover {
+    background-color: #ff0800;
+    box-shadow: 0 0 0 5px #eb5b56;
+}
+
+@keyframes beat {
+    to {
+        transform: scale(1.2);
+    }
+}
