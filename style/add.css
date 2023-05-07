@@ -1,30 +1,25 @@
-body {
-    background-image: url("../img/bg.jpg");
-    background-size: cover;
-}
-
-input,
-textarea {
+#ADD input,
+#ADD textarea {
     padding: 10px;
     font-size: 16px;
     background-color: transparent;
-    color: white;
-    border: 1px solid chartreuse;
+    color: var(--linksHover);
+    border: 1px solid var(--contrast);
 }
 
-input:focus,
-textarea:focus {
-    background-color: rgba(127, 255, 0, 0.2);
-    color: white;
+#ADD input:focus,
+#ADD textarea:focus {
+    background-color: var(--focus);
+    color: var(--linksHover);
 }
 
-textarea {
+#ADD textarea {
     grid-column-start: 1;
     grid-column-end: 3;
     resize: none;
 }
 
-#addBtn {
+#ADD #addBtn {
     grid-column-start: 1;
     grid-column-end: 3;
     place-self: center;
@@ -35,19 +30,18 @@ textarea {
     font-weight: 600;
 }
 
-#addBtn:hover {
-    background-color: yellowgreen;
+#ADD #addBtn:hover {
+    background-color: var(--links);
     transition: all ease-in-out .5s;
     animation: beat .5s infinite alternate;
 }
 
-form {
+#ADD form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     padding: 20px;
-    background-color: rgba(25, 25, 25, 0.8);
-    border: 1px solid rgb(96, 96, 96);
+    background-color: rgb(25, 25, 25);
 }
 
 @keyframes beat {

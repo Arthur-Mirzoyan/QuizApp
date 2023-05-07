@@ -7,6 +7,9 @@
 ?>
 
 <link rel="stylesheet" href="../style/main.css">
+<dialog>
+    <?php include "./add.php"; ?>
+</dialog>
 <div class="container">
     <?php 
         if(empty($data)) echo "<h1>No Words Found.</h1>";
@@ -41,18 +44,18 @@
             <th>Delete All Words From Lesson >>></th>
             <th>
                 <form action="../connection/action.php" method="post">
-                <select id="lesson" class="secondCol" name="lesson">
-                    <option value="all">All</option>
-                    <?php
+                    <select id="lesson" class="secondCol" name="lesson">
+                        <option value="all">All</option>
+                        <?php
                         if (!empty($lessons)) {
                             foreach($lessons as $rows) {
                     ?>
-                    <option value="<?php echo $rows['lesson']?>"><?php echo $rows['lesson'] ?></option>
-                    <?php }} ?>
-                </select>
+                        <option value="<?php echo $rows['lesson']?>"><?php echo $rows['lesson'] ?></option>
+                        <?php }} ?>
+                    </select>
             </th>
             <th>
-                    <button id="deleteAllBtn"  type="submit" name="deleteAll">DELETE</button>
+                <button id="deleteAllBtn" type="submit" name="deleteAll">DELETE</button>
                 </form>
             </th>
         </tr>

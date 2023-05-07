@@ -17,7 +17,7 @@
         mysqli_query($conn, $sql);
 
         closeConn($conn);
-        header("location:../pages/add.php");
+        header("location:../pages/main.php");
     }
 
     function getWords($lesson = "all") {

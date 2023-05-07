@@ -29,7 +29,7 @@
             </div>
         </div>
         <?php $i++; }} ?>
-        <input type="submit" name="check" value="check">
+        <input id="checkBtn" type="submit" name="check" value="CHECK">
     </form>
 </div>
 

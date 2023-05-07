@@ -1,0 +1,9 @@
+:root {
+    --main: #d7dedb;
+    --contrast: chartreuse;
+    --headerMain: rgb(101, 101, 101);
+    --links: yellowgreen;
+    --linksHover: white;
+    --backdrop: rgba(0, 0, 0, 0.5);
+    --focus: rgba(127, 255, 0, 0.2);
+}

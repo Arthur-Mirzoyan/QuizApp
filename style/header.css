@@ -5,13 +5,13 @@
 }
 
 *::selection {
-    color: chartreuse;
-    background-color: black;
+    color: var(--contrast);
+    background-color: var(--backdrop);
 }
 
 body {
     height: 100vh;
-    background-color: #d7dedb;
+    background-color: var(--main);
     align-items: flex-start;
 }
 
@@ -24,12 +24,14 @@ body {
 }
 
 header {
-    background-color: rgb(101, 101, 101);
+    background-color: var(--headerMain);
     padding: 10px;
 }
 
 header nav {
     display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
 }
 
 header ul {
@@ -49,7 +51,7 @@ header ul li {
 
 header ul li > a {
     text-decoration: none;
-    color: yellowgreen;
+    color: var(--links);
     width: inherit;
     height: inherit;
     font-weight: 600;
@@ -64,7 +66,7 @@ header ul li a::after {
     width: inherit;
     height: 5px;
     border-radius: 5px;
-    background-color: white;
+    background-color: var(--linksHover);
     transform: scale(0);
     transition: all ease-in-out .3s;
 }
@@ -74,11 +76,27 @@ header ul li a:hover::after {
 }
 
 .active {
-    color: chartreuse;
+    color: var(--contrast);
 }
 
 .active::after {
-    color: chartreuse;
+    color: var(--contrast);
     transform: scaleX(1.5);
-    background-color: chartreuse;
+    background-color: var(--contrast);
+}
+
+#add li {
+    width: auto;
+    min-width: 0;
+}
+
+#add button {
+    background-color: transparent;
+    border: none;
+    cursor: crosshair;
+}
+
+#add img {
+    aspect-ratio: 1 / 1;
+    width: 40px;
 }

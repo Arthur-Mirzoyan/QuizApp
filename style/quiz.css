@@ -29,3 +29,16 @@
 .choise {
     grid-column-start: 2;
 }
+
+#checkBtn {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: lightskyblue;
+    border-radius: 20px;
+    border: none;
+    transition: all ease-in-out .2s;
+}
+
+#checkBtn:hover {
+    background-color: dodgerblue;
+}

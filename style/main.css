@@ -5,7 +5,7 @@
 .container table tr:first-child {
     background-color: rgb(54, 54, 54);
     position: sticky;
-    color: white;
+    color: var(--linksHover);
 }
 
 #tableHeader th {
@@ -73,4 +73,15 @@ form {
     to {
         transform: scale(1.2);
     }
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog {
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 1px solid var(--contrast);
 }
