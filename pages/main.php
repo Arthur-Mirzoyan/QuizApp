@@ -7,7 +7,7 @@
 ?>
 
 <link rel="stylesheet" href="../style/main.css">
-<dialog>
+<dialog id="addDialog">
     <?php include "./add.php"; ?>
 </dialog>
 <div class="container">
@@ -31,7 +31,7 @@
             <th><?php echo ucfirst($rows['lesson']); ?></th>
             <th>
                 <form action="../connection/action.php" method="post">
-                    <button id="changeBtn" type="submit" name="change"
+                    <button id="changeBtn" type="button" onclick="toggleModal('updateDialog')"
                         value="<?php echo ucfirst($rows['id']); ?>"></button>
                     <button id="deleteBtn" type="submit" name="delete"
                         value="<?php echo ucfirst($rows['id']); ?>"></button>
@@ -62,5 +62,7 @@
         <?php } ?>
     </table>
 </div>
-
+<dialog id="updateDialog">
+    <?php include "./update.php"; ?>
+</dialog>
 <?php include "../header_footer/footer.php"; ?>

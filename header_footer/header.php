@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../style/colors.css">
         <link rel="stylesheet" href="../style/header.css">
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
         <title>Learn with me</title>
         <script src="../script.js"></script>
     </head>

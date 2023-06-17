@@ -15,8 +15,9 @@ function isValidChange(x) {
     }
 }
 
-function toggleModal() {
-    let modal = document.querySelector('dialog');
+function toggleModal(dialogId = "addDialog") {
+    console.log(dialogId)
+    let modal = document.getElementById(dialogId);
 
     modal?.showModal();
 
